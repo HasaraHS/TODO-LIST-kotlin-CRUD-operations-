@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".CreateCard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_task"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        android:gravity="left"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/create_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/task_hint"
+        android:layout_marginTop="16dp"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/create_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/pr_hint"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/create_deadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/deadLine_hint"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:inputType="date"/>
+
+<!--    <Spinner-->
+<!--        android:id="@+id/task_type_spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/border"-->
+<!--        android:padding="15dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="@color/black"/>-->
+
+    <EditText
+        android:id="@+id/create_description"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/description_hint"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="#BFBBBB"
+        android:textColor="@color/black"
+        android:gravity="top|start"
+        android:textSize="18sp"/>
+
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple"
+        android:contentDescription="@string/add_task"
+        app:icon="@drawable/baseline_add_task_24" />
+
+</LinearLayout>

@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">TODO LIST</string>
     <string name="task_bar">Task Bar</string>
+    <string name="view_text">Your task will go here</string>
+    <string name="p_text">Priority - High</string>
+    <string name="add_task">Add Task</string>
+    <string name="task_hint">Enter Task</string>
+    <string name="pr_hint">Priority</string>
+    <string name="deadLine_hint">Enter Deadline Date</string>
+    <string name="description_hint">Enter Description</string>
+
+<!--    <string-array name="task_types">-->
+<!--    <item>Education</item>-->
+<!--    <item>Personal</item>-->
+<!--    <item>Work</item>-->
+<!--         </string-array>-->
+
+    <string name="app_title">TaskNavigator</string>
+    <string name="app_title_under">Manage Your Day</string>
+    <string name="update_title">Update Task Details</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
 </resources>
