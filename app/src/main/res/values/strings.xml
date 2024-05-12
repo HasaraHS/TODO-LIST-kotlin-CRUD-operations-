@@ -20,4 +20,8 @@
     <string name="update_title">Update Task Details</string>
     <string name="update">Update</string>
     <string name="delete">Delete</string>
+
+
+    <string name="deadLine_text">DeadLine - 2024.05.08</string>
+    <string name="description_text">Description</string>
 </resources>

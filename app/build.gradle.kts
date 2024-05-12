@@ -1,7 +1,16 @@
+
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
+//    id ("kotlin-android-extensions")
+    id ("kotlin-android")
+//    id("com.google.devtools.ksp")
+
 }
+
+
 
 android {
     namespace = "com.example.todolist"
@@ -42,9 +51,21 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+//    implementation(libs.androidx.room.common)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation ("androidx.room:room-runtime:2.6.1")
+    implementation ("androidx.room:room-ktx:2.6.1")
+
+
+    val roomVersion = "2.4.0"
+    //noinspection GradleDependency
+    implementation("androidx.room:room-ktx:$roomVersion")
+//    kapt("androidx.room:room-compiler:$room_version")
+
 
 }
+
+
